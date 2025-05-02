@@ -3,7 +3,7 @@
 import csv
 import os
 
-def create_text_documents(path="./", csv_file="files-to-create.csv", filename_column="filename", contents_column="contents"):
+def create_text_documents(path="../../../_posts", csv_file="files-to-create.csv", filename_column="filename", contents_column="contents"):
     # Open the CSV file
     with open(csv_file, newline="") as csvfile:
         reader = csv.DictReader(csvfile)
